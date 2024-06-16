@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oM8+t7dCC8bxiKXwZhwQYbn8bXejjlq3ffU6jaPau2A=",
+  "Source": "AutenticacaoDeUsuarios.API",
+  "BasePath": "_content/AutenticacaoDeUsuarios.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

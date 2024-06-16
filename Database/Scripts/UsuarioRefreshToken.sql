@@ -1,0 +1,33 @@
+﻿USE [dbAutenticacaoDeUsuarios]
+GO
+
+/****** Object:  Table [dbo].[UsuarioRefreshToken]    Script Date: 16/06/2024 15:56:21 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UsuarioRefreshToken](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UsuarioId] [int] NOT NULL,
+	[RefreshToken] [varchar](max) NOT NULL,
+ CONSTRAINT [PK_UsuarioRefreshToken] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[UsuarioId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[UsuarioRefreshToken]  WITH CHECK ADD  CONSTRAINT [FK_UsuarioRefreshToken_Usuario] FOREIGN KEY([UsuarioId])
+REFERENCES [dbo].[Usuario] ([Id])
+GO
+
+ALTER TABLE [dbo].[UsuarioRefreshToken] CHECK CONSTRAINT [FK_UsuarioRefreshToken_Usuario]
+GO
+
+

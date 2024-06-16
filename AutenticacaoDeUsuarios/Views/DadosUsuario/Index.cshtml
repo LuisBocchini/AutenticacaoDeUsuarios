@@ -1,0 +1,96 @@
+﻿@model UsuarioAplicacao;
+
+<style>
+    main {
+        width: 89%;
+        margin: 0 auto;
+    }
+</style>
+
+<br />
+<br />
+<h5 class="display-5">Meus Dados</h5>
+<p>Clique em salvar para editar suas informações</a>.</p>
+
+
+
+<form>
+    @if (!string.IsNullOrEmpty(Model.Imagem))
+    {
+        <div class="mb-3">
+            <img id="imagemUsuario" src="@($"data:image/jpeg;base64,{Model.Imagem}")" style="max-width: 200px; max-height: 200px; margin-top: 5px;" />
+        </div>
+    }
+    <div class="mb-3">
+        <label for="inputNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome" value="@Model.Nome">
+    </div>
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" value="@Model.Email" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="inputDataCadastro" class="form-label">Data de cadastro</label>
+        <input type="date" class="form-control" id="inputDataCadastro" value="@Model.DataCadastro?.ToString("yyyy-MM-dd")" disabled>
+    </div>
+    <div class="mb-3">
+        <label for="inputImagem" class="form-label">Substituir foto atual</label>
+        <input type="file" class="form-control" id="inputImagem" value="@Model.Imagem">
+    </div>
+   
+    <button type="button" class="btn btn-primary" onclick="fnSalvar();">Salvar</button>
+</form>
+
+<script>
+
+    function fnSalvar(){
+        var inputNome = $("#inputNome").val();
+        var inputEmail = $("#inputEmail").val();
+        var inputDataCadastro = $("#inputDataCadastro").val();
+        var inputImagem = $('#inputImagem')[0];
+
+        if (inputImagem.files.length > 1) {
+
+        }
+
+        fnObterBase64(inputImagem).then(function (base64Arquivo) {
+            $.post("/DadosUsuario/Salvar", { Nome: inputNome, Foto: base64Arquivo })
+                .done(function (data) {
+                    fnSalvar_CallBack(data)
+                })
+                .fail(function (xhr, status, error) {
+                });
+        });
+    }
+
+    function fnObterBase64(inputArquivo) {
+        return new Promise(function (resolve, reject) {
+            var fileInput = inputArquivo;
+            var file = fileInput.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = function (event) {
+                    var base64String = event.target.result;
+                    resolve(base64String);
+                };
+                reader.onerror = function (error) {
+                    reject(error);
+                };
+            } else {
+                resolve(null);
+            }
+        });
+    }
+
+    function fnSalvar_CallBack(resultado){
+        if (resultado.sucesso) {
+            location.reload();
+        } else {
+            Alert("Erro ao atualizar usuário")
+        }
+    }
+</script>
+
+
+

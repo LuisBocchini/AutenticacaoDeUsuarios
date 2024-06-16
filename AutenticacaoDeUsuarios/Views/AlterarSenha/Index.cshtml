@@ -1,0 +1,118 @@
+﻿@{
+    var possuiSenhaAtual = (bool)ViewBag.PossuiSenhaAtual;
+}
+<style>
+    main {
+        width: 89%;
+        margin: 0 auto;
+    }
+</style>
+
+<br />
+<br />
+<h5 class="display-5">Meus Dados</h5>
+<p>Clique em salvar para editar suas informações.</p>
+
+<form>
+    @if (possuiSenhaAtual)
+    {
+        <div class="mb-3">
+            <label for="inputNome" class="form-label">Senha Atual</label>
+            <input type="password" class="form-control" id="inputSenhaAtual" placeholder="Digite a senha atual">
+        </div>
+    }
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">Nova Senha</label>
+        <input type="password" class="form-control" id="inputNovaSenha" placeholder="Digite a nova senha">
+    </div>
+    <div class="mb-3">
+        <label for="inputEmail" class="form-label">Confirme a nova senha</label>
+        <input type="password" class="form-control" id="inputNovaSenhaConfirmacao" placeholder="Confirme a nova senha">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="fnSalvar(this);">Salvar</button>
+</form>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto" id="toastMensagem"></strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function fnSalvar(botao) {
+        DesabilitarOuHabilitarBotao(true, "Aguarde...", botao);
+        var inputSenhaAtual = $("#inputSenhaAtual").val();
+        var inputNovaSenha = $("#inputNovaSenha").val();
+        var inputNovaSenhaConfirmacao = $("#inputNovaSenhaConfirmacao").val();
+
+        if (inputNovaSenha != inputNovaSenhaConfirmacao) {
+            fnMensagem(false, "Os campos de nova senha não são iguais");
+            return false;
+        };
+
+        var token = ObterParametroUrl("token");
+
+        $.post("/AlterarSenha/Salvar", { senhaAtual: inputSenhaAtual, novaSenha: inputNovaSenhaConfirmacao, token: token })
+            .done(function (data) {
+                fnSalvar_CallBack(data, botao)
+            })
+            .fail(function (xhr, status, error) {
+                fnMensagem(false, "Erro ao atualizar senha");
+                DesabilitarOuHabilitarBotao(false, "Salvar", botao);
+            });
+    }
+
+    function fnSalvar_CallBack(resultado, botao) {
+        if (resultado.sucesso) {
+            fnMensagem(true, `${resultado.mensagem}. Você será redirecionado para o login em alguns segundos`);
+            setTimeout(function () {
+                window.location.href = "https://localhost:7066/Login/Sair";
+            }, 3000);
+
+        } else {
+            fnMensagem(false, resultado.mensagem)
+        }
+        DesabilitarOuHabilitarBotao(false, "Salvar", botao);
+    }
+
+    function fnMensagem(sucesso, mensagem) {
+        var toast = new bootstrap.Toast($('#liveToast')[0]);
+        if (sucesso == true) {
+            $("#toastMensagem").css("color", "green");
+            $("#toastMensagem").text("Sucesso");
+        } else {
+            $("#toastMensagem").css("color", "red");
+            $("#toastMensagem").text("Falha");
+
+        }
+        $(".toast-body").text(mensagem)
+        toast.show();
+    }
+
+    function DesabilitarOuHabilitarBotao(desabilitar, texto, botao){
+
+        if (desabilitar == true) {
+            $(botao).prop("disabled", true);
+            $(botao).text(texto);
+        }else{
+            $(botao).prop("disabled", false);
+            $(botao).text(texto);
+        }
+    }
+
+    function ObterParametroUrl(nome) {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        return urlParams.get(nome);
+    }
+</script>
+
+
+

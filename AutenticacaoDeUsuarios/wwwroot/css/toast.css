@@ -1,0 +1,24 @@
+﻿#toast {
+    max-width: 265px;
+    margin-left: -125px;
+    background-color: #f8d7da;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    font-size: 17px;
+    word-break: break-all;
+    right: 19px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    opacity: 0;
+    color: #721c24;
+}
+
+    #toast.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }

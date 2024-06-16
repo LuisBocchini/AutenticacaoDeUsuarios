@@ -1,0 +1,147 @@
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/css/toast.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input  id="inputEmailCadastro" autocomplete="off" type="text" placeholder="e-mail" />
+                <input  id="inputConfirmacaoEmailCadastro" autocomplete="off" type="text" placeholder="confirme o e-mail" />
+                <input id="inputNomeCadastro" autocomplete="off" type="text" placeholder="nome" />
+                <input id="inputSenhaCadastro" autocomplete="off" type="password" placeholder="senha" />
+                <input id="inputConfirmacaoSenhaCadastro" autocomplete="off" type="password" placeholder="confirme a senha" />
+                <button type="button" onclick="fnCadastrar(this)">Criar</button>
+                <p class="message pJaRegistrado">Já registrado? <a href="#">Entrar</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" autocomplete="off" placeholder="nome" id="inputEmail" />
+                <input type="password" autocomplete="off" placeholder="senha" id="inputSenha" />
+                <button type="button" onclick="fnAutenticar(this)">login</button>
+                <p class="message pNaoRegistrado">Não registrado? <a href="#">Crie a sua conta aqui</a></p>
+                <p class="message pEsqueceuSenha">Esqueceu sua senha? <a href="#">Faça a redefinição aqui</a></p>
+            </form>
+            <form class="redefinirSenha-form">
+                <input type="text" autocomplete="off" placeholder="e-mail" id="inputEmailRedefinicao" />
+                <button type="button" onclick="fnEnviarEmailRedefinicaoSenha(this)">Enviar</button>
+                <p class="message">Digite o e-mail da sua conta para fazer a redefinição de senha</p>
+                <p class="message pJaRegistrado">Já registrado? <a href="#">Entrar</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="toast"></div>
+</body>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<script>
+
+    function fnAutenticar(botao){
+        fnDesabilitarBotao(botao, "AUTENTICANDO...");
+        $.post("/Login/Autenticar", { 
+            email: $("#inputEmail").val(), 
+            senha: $("#inputSenha").val() 
+        })
+        .done(function (retorno) {
+            fnAutenticar_CallBack(retorno, botao)
+        });
+    }
+
+    function fnAutenticar_CallBack(retorno, botao){
+        if (retorno.sucesso)
+            window.location.href = "/Home/Index";
+        else {
+            fnMensagemErro(retorno.mensagem);
+            fnHabilitarBotao(botao, "LOGIN");
+        }
+    }
+
+    function fnCadastrar(botao) {
+        fnDesabilitarBotao(botao, "CADASTRANDO...");
+        if ($("#inputEmailCadastro").val() != $("#inputConfirmacaoEmailCadastro").val()) {
+            fnMensagemErro("Confirmação de e-mail incorreta");
+            fnHabilitarBotao(botao, "ENVIAR");
+            return false;
+        }
+        if ($("#inputSenhaCadastro").val() != $("#inputConfirmacaoSenhaCadastro").val()) {
+            fnMensagemErro("Confirmação de senha incorreta");
+            fnHabilitarBotao(botao, "ENVIAR");
+            return false;
+        }
+        $.post("/Login/Cadastrar", { 
+            email: $("#inputConfirmacaoEmailCadastro").val(), 
+            nome: $("#inputNomeCadastro").val(), 
+            senha: $("#inputConfirmacaoSenhaCadastro").val() 
+        })
+        .done(function (retorno) {
+            fnCadastrar_CallBack(retorno, botao)
+        });
+    }
+
+    function fnCadastrar_CallBack(retorno, botao) {
+        if (retorno.sucesso) {
+            fnMensagemSucesso(retorno.mensagem);
+            fnHabilitarBotao(botao, "CRIAR");
+        }
+        else {
+            fnMensagemErro(retorno.mensagem);
+            fnHabilitarBotao(botao, "CRIAR");
+        }
+    }
+
+    function fnEnviarEmailRedefinicaoSenha(botao) {
+        fnDesabilitarBotao(botao, "ENVIANDO...");
+        $.post("/Login/EnviarEmailRedefinicaoSenha", {
+            email: $("#inputEmailRedefinicao").val(),
+        })
+            .done(function (retorno) {
+                fnEnviarEmailRedefinicaoSenha_CallBack(retorno, botao)
+            });
+    }
+
+    function fnEnviarEmailRedefinicaoSenha_CallBack(retorno, botao) {
+        if (retorno.sucesso) {
+            fnMensagemSucesso(retorno.mensagem);
+            fnHabilitarBotao(botao, "ENVIAR");
+            $('.login-form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+            $('.register-form').hide();
+            $('.redefinirSenha-form').hide();
+        }
+        else {
+            fnMensagemErro(retorno.mensagem);
+            fnHabilitarBotao(botao, "ENVIAR");
+        }
+    }
+
+    $('.pNaoRegistrado').click(function () {
+        $('.register-form').animate({ height: "toggle", opacity: "toggle" }, "slow", function () { $("input").val(""); });
+        $('.login-form').hide();
+        $('.redefinirSenha-form').hide();
+        
+    });
+
+    $('.pJaRegistrado').click(function () {
+        $('.login-form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        $('.register-form').hide();
+        $('.redefinirSenha-form').hide();
+    });
+    
+    $('.pEsqueceuSenha').click(function () {
+        $('.redefinirSenha-form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        $('.login-form').hide();
+        $('.register-form').hide();
+    });
+
+</script>
+
+

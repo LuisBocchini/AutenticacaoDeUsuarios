@@ -1,0 +1,73 @@
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.AssemblyReference.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfoInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfo.cs
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.CoreCompileInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.deps.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.runtimeconfig.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\refint\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.genruntimeconfig.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\ref\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.deps.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.runtimeconfig.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.AssemblyReference.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfoInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfo.cs
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.CoreCompileInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.sourcelink.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\refint\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.genruntimeconfig.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios repo\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\ref\AutenticacaoDeUsuarios.Data.dll
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.deps.json
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.runtimeconfig.json
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.AssemblyReference.cache
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfoInputs.cache
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfo.cs
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.CoreCompileInputs.cache
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.sourcelink.json
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\refint\AutenticacaoDeUsuarios.Data.dll
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.genruntimeconfig.cache
+C:\Users\luisb\Desktop\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\ref\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.deps.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.runtimeconfig.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.AssemblyReference.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfoInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfo.cs
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.CoreCompileInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.sourcelink.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\refint\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.genruntimeconfig.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios\autenticacaodeusuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\ref\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.deps.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.runtimeconfig.json
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\bin\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.AssemblyReference.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfoInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.AssemblyInfo.cs
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.csproj.CoreCompileInputs.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\refint\AutenticacaoDeUsuarios.Data.dll
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.pdb
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\AutenticacaoDeUsuarios.Data.genruntimeconfig.cache
+D:\Visual Studio, C#\AutenticacaoJWT\AutenticacaoDeUsuarios-repo\AutenticacaoDeUsuarios\AutenticacaoDeUsuarios.Data\obj\Debug\net8.0\ref\AutenticacaoDeUsuarios.Data.dll
